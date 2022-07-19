@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c249d5</p>
-  <p><strong>Date:</strong> Updated 16 March 2022</p>
+  <p><strong>Date:</strong> Updated 11 July 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that it is possible to disable any changes to the content of the web page resulting from device motion based events.
-  last_modified: 16 March 2022
+  last_modified: 11 July 2022
   scs_tested:
     - handle: Motion Actuation
       num: 2.5.4
@@ -92,7 +92,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c249d5/0c6bdb9bd6aa5ccc33b456cd8ca3ad6407ae7f2e.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c249d5/0c6bdb9bd6aa5ccc33b456cd8ca3ad6407ae7f2e.html">Open in a new tab</a>
 
 This [HTML document][] has device orientation events that cause **no changes** to the content of the web page.
 
@@ -119,7 +119,7 @@ This [HTML document][] has device orientation events that cause **no changes** t
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c249d5/5f2b3006260d42e4b1ecab252e13a3cf6dcaa151.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c249d5/5f2b3006260d42e4b1ecab252e13a3cf6dcaa151.html">Open in a new tab</a>
 
 This [HTML document][] that can be operated through the device's orientation to increase and decrease the value of a slider has a control to **disable** that functionality.
 
@@ -158,7 +158,7 @@ This [HTML document][] that can be operated through the device's orientation to 
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c249d5/69ccd16f145617a2c1a8c1988e65730dab3309d0.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c249d5/69ccd16f145617a2c1a8c1988e65730dab3309d0.html">Open in a new tab</a>
 
 This [HTML document][] that can be operated by rotating the device to increase and decrease the value of a slider has a control to **disable** that functionality.
 
@@ -199,7 +199,7 @@ This [HTML document][] that can be operated by rotating the device to increase a
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c249d5/86eae98d063a0e3c7ed92d2708b1c8e29ae3e8e9.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c249d5/86eae98d063a0e3c7ed92d2708b1c8e29ae3e8e9.html">Open in a new tab</a>
 
 This [HTML document][] that can be operated through the device's orientation to increase and decrease the value of a slider but has no way to **disable** this functionality.
 
@@ -239,7 +239,7 @@ This [HTML document][] that can be operated through the device's orientation to 
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c249d5/2694ab357e8e65b63d04049518396248d45b8091.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c249d5/2694ab357e8e65b63d04049518396248d45b8091.html">Open in a new tab</a>
 
 This [HTML document][] is not operable by device motion.
 
@@ -354,9 +354,9 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
-**Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+**Note**: Contrary to the other conditions, the `visibility` CSS property may be reverted by descendants.
 
-**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) setting the CSS `display` property to `none` for elements with the `hidden` attribute. While not required by HTML, all modern browsers follow this suggestion. Because of this the `hidden` attribute is not used in this definition. In browsers that use this suggestion, overriding the CSS `display` property can reveal elements with the `hidden` attribute.
 
 ### Semantic Role {#semantic-role}
 
@@ -391,12 +391,6 @@ An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of
 **Note:** [Web pages](https://www.w3.org/TR/WCAG21/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
 
 **Note:** Although web pages as defined here are sets of [documents](https://dom.spec.whatwg.org/#concept-document) (and do not contain other kind of nodes), one can abusively write that any node is "in a web page" if it is a [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) of a [document](https://dom.spec.whatwg.org/#concept-document) that is part of that web page.
-
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
 
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessibility supported]: https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation#dfn-accessibility-supported

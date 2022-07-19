@@ -1,5 +1,5 @@
 ---
-title: "video element visual-only content has audio track alternative"
+title: "Video element visual-only content has audio track alternative"
 permalink: /standards-guidelines/act/rules/d7ba54/proposed/
 ref: /standards-guidelines/act/rules/d7ba54/proposed/
 lang: en
@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> d7ba54</p>
-  <p><strong>Date:</strong> Updated 23 March 2022</p>
+  <p><strong>Date:</strong> Updated 12 July 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -17,11 +17,11 @@ footer: |
 proposed: true
 rule_meta:
   id: d7ba54
-  name: "`video` element visual-only content has audio track alternative"
+  name: "Video element visual-only content has audio track alternative"
   rule_type: atomic
   description: |
     Non-streaming `video` elements without audio must have an audio alternative.
-  last_modified: 23 March 2022
+  last_modified: 12 July 2022
 ---
 
 ## Applicability
@@ -34,8 +34,7 @@ The visual information of each test target is available through an audio track.
 
 ## Assumptions
 
-- A mechanism is available to start the video and that the video element is not simply used to display the [poster](https://www.w3.org/TR/html5/semantics-embedded-content.html#element-attrdef-video-poster).
-- The language of each test target can be correctly determined (either programmatically or by analyzing the content), and sufficiently understood.
+A mechanism is available to start the video and that the video element is not simply used to display the [poster](https://www.w3.org/TR/html5/semantics-embedded-content.html#element-attrdef-video-poster).
 
 ## Accessibility Support
 
@@ -81,7 +80,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/634bb07611c5d126e49caf4bfce8b6d50c872fce.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/634bb07611c5d126e49caf4bfce8b6d50c872fce.html">Open in a new tab</a>
 
 This `video` element, which has no audio, has a separate audio track that describes the visual information.
 
@@ -102,7 +101,7 @@ This `video` element, which has no audio, has a separate audio track that descri
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/8664da01669e891e6f0aa73cd85e71277961cc4c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/8664da01669e891e6f0aa73cd85e71277961cc4c.html">Open in a new tab</a>
 
 This `video` element, which has no audio, does not have an audio track describing the visual information.
 
@@ -117,7 +116,7 @@ This `video` element, which has no audio, does not have an audio track describin
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/2e9bff37ba69e76a995b6339748eaad2f7a30aca.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/2e9bff37ba69e76a995b6339748eaad2f7a30aca.html">Open in a new tab</a>
 
 This `video` element, which has no audio, has a separate audio track that incorrectly describes the visual information.
 
@@ -138,7 +137,7 @@ This `video` element, which has no audio, has a separate audio track that incorr
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/b0ac8ea6b081f130102db50c239cc7e44ea47ec8.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/b0ac8ea6b081f130102db50c239cc7e44ea47ec8.html">Open in a new tab</a>
 
 This `video` element has audio.
 
@@ -153,7 +152,7 @@ This `video` element has audio.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/58393298a3a4c89033f09be47ec2aefb45be193e.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/58393298a3a4c89033f09be47ec2aefb45be193e.html">Open in a new tab</a>
 
 This `video` element is not [visible][].
 
@@ -193,11 +192,5 @@ Content is considered _visible_ if making it fully transparent would result in a
 [Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
-
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
 
 [visible]: #visible 'Definition of visible'

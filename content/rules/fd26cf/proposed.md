@@ -1,5 +1,5 @@
 ---
-title: "video element visual-only content is media alternative for text"
+title: "Video element visual-only content is media alternative for text"
 permalink: /standards-guidelines/act/rules/fd26cf/proposed/
 ref: /standards-guidelines/act/rules/fd26cf/proposed/
 lang: en
@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> fd26cf</p>
-  <p><strong>Date:</strong> Updated 23 March 2022</p>
+  <p><strong>Date:</strong> Updated 12 July 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -17,11 +17,11 @@ footer: |
 proposed: true
 rule_meta:
   id: fd26cf
-  name: "`video` element visual-only content is media alternative for text"
+  name: "Video element visual-only content is media alternative for text"
   rule_type: atomic
   description: |
     This rule checks non-streaming silent `video` is a media alternative for text on the page.
-  last_modified: 23 March 2022
+  last_modified: 12 July 2022
 ---
 
 ## Applicability
@@ -34,16 +34,12 @@ All the information contained in each target element is available as text (direc
 
 ## Expectation 2
 
-Each target element is labeled as a video alternative for text on the page.
+Each target element is labeled as a video alternative for text on the page by content that is [visible][] and [included in the accessibility tree][].
 
-## Expectation 3
-
-The label (from expectation 2) is [visible][] and [included in the accessibility tree][].
 
 ## Assumptions
 
-- A mechanism is available to start the video and that the video element is not simply used to display the [poster](https://www.w3.org/TR/html5/semantics-embedded-content.html#element-attrdef-video-poster).
-- The language of each test target can be correctly determined (either programmatically or by analyzing the content), and sufficiently understood.
+A mechanism is available to start the video and that the video element is not simply used to display the [poster](https://www.w3.org/TR/html5/semantics-embedded-content.html#element-attrdef-video-poster).
 
 ## Accessibility Support
 
@@ -76,7 +72,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/481e55b81376491b363aab5c622e58fe6b63bace.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/481e55b81376491b363aab5c622e58fe6b63bace.html">Open in a new tab</a>
 
 This `video` element, which has no audio, is a media alternative for the text in the page and it is labeled as such.
 
@@ -95,7 +91,7 @@ This `video` element, which has no audio, is a media alternative for the text in
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/095d586472a567660c95d2954f9fc65275c159fe.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/095d586472a567660c95d2954f9fc65275c159fe.html">Open in a new tab</a>
 
 This `video` element, which has no audio, has more information than the text on the page.
 
@@ -112,7 +108,7 @@ This `video` element, which has no audio, has more information than the text on 
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/cc09b4256a230ce3b1c7992316e2adb405f88de6.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/cc09b4256a230ce3b1c7992316e2adb405f88de6.html">Open in a new tab</a>
 
 This `video` element, which has no audio, is a media alternative for the text in the page and labeled as such, but the text is not [visible][].
 
@@ -129,7 +125,7 @@ This `video` element, which has no audio, is a media alternative for the text in
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/0f884e5935b0e6b1bd809d550738772e32f439c5.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/0f884e5935b0e6b1bd809d550738772e32f439c5.html">Open in a new tab</a>
 
 This `video` element, which has no audio, is a media alternative for the text in the page but not labeled as such.
 
@@ -146,7 +142,7 @@ This `video` element, which has no audio, is a media alternative for the text in
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/10ce0d34bb2e94f7cf3551d566d10e8f5e21c9f3.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/10ce0d34bb2e94f7cf3551d566d10e8f5e21c9f3.html">Open in a new tab</a>
 
 This `video` element, which has no audio, is a media alternative for the text in the page and labeled as such, but the label is not [visible][].
 
@@ -168,7 +164,7 @@ This `video` element, which has no audio, is a media alternative for the text in
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/91f5189004dff8c702eefb7214486bd18868fee1.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/91f5189004dff8c702eefb7214486bd18868fee1.html">Open in a new tab</a>
 
 This `video` element has audio.
 
@@ -185,7 +181,7 @@ This `video` element has audio.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/410798f8a3fb14f6dd3f6a47c50f52d7bb7ff739.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/410798f8a3fb14f6dd3f6a47c50f52d7bb7ff739.html">Open in a new tab</a>
 
 This `video` element is not [visible][].
 
@@ -253,9 +249,9 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
-**Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+**Note**: Contrary to the other conditions, the `visibility` CSS property may be reverted by descendants.
 
-**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) setting the CSS `display` property to `none` for elements with the `hidden` attribute. While not required by HTML, all modern browsers follow this suggestion. Because of this the `hidden` attribute is not used in this definition. In browsers that use this suggestion, overriding the CSS `display` property can reveal elements with the `hidden` attribute.
 
 ### Visible {#visible}
 
@@ -266,12 +262,6 @@ Content is considered _visible_ if making it fully transparent would result in a
 [Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
-
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
 
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
